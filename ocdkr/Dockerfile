@@ -6,7 +6,7 @@ RUN  mkdir /home/worker/test
 ENV PATH="/home/worker/.local/bin:${PATH}"
 COPY test.py /home/worker/test
 WORKDIR /home/worker/test
-RUN  pip install --user worker flask && ls  /home/worker/test
+RUN  pip install flask && ls  /home/worker/test
     
 CMD python $file
 
