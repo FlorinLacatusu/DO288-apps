@@ -1,5 +1,5 @@
 FROM node:slim
-RUN useradd -D test
+RUN useradd test
 USER test
 WORKDIR /home/test
 COPY server.js .
