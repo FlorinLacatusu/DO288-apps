@@ -1,5 +1,5 @@
 FROM python:2.7-alpine
-ENV file=test
+ENV file=test.py
 RUN  pip install flask && \
      mkdir /test
 COPY test.py /test
