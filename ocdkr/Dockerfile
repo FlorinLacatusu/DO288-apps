@@ -3,7 +3,7 @@ ENV file=test.py
 RUN adduser -D worker
 USER worker
 RUN  pip install flask && \
-     mkdir /test
+     mkdir /home/test
 COPY test.py /test
 WORKDIR /test
 CMD python $file
