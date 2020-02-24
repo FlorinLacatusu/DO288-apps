@@ -5,6 +5,6 @@ USER worker
 RUN  pip install flask && \
      mkdir /home/worker/test
 COPY test.py /home/worker/test
-WORKDIR /test
+WORKDIR /home/worker/test
 CMD python $file
 
