@@ -3,8 +3,8 @@ ENV file=test.py
 RUN adduser -D worker
 USER worker
 WORKDIR /home/worker
-RUN pip install --user flask
 ENV PATH="/home/worker/.local/bin:${PATH}"
+RUN pip install --user flask
 COPY test.py /home/worker
 CMD python $file
 
