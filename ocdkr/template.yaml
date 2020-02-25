@@ -111,11 +111,6 @@ objects:
       type: Generic
 - apiVersion: v1
   kind: DeploymentConfig
-  metadata:
-    annotations:
-      description: Defines how to deploy the application server
-      template.alpha.openshift.io/wait-for-ready: "true"
-    name: ${NAME}
   spec:
     replicas: 1
     selector:
